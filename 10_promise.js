@@ -5,16 +5,16 @@
  * utilisez new Promise
  */
 
-const sleep = (ltime) => {
+const sleep = () => {
     console.log("start");
     return new Promise ( (resolve, reject) => {
         setTimeout(() => {
             console.log("fin");
             resolve();
-        }, ltime);
+        }, 2000);
     });
 }
 
-sleep(200);
+sleep();
 
 module.exports = {sleep};

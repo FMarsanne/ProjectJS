@@ -22,13 +22,13 @@ const getGroupName = (obj) => {
 }
 
 const testobj = {
-    name: "John",
+    name: 'John',
     group: {
-      name: "admin"},
+      name: 'admin'},
     };
 
 const testobj2 = {
-    name: "Mike"
+    name: 'Mike'
     };
 
 console.log(getGroupName(testobj));

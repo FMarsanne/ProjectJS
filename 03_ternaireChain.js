@@ -16,4 +16,6 @@ function ternaryChain(a, b) {
     return ret;
 }
 
+console.log(ternaryChain(5, 6));
+
 module.exports = ternaryChain;

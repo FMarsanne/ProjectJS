@@ -7,7 +7,7 @@
  */
 function ternaire(a , b) {
     const ret = a >= b ? a : b;
-    return ret  
+    return ret;  
 }
 
 console.log(ternaire(1, 2));

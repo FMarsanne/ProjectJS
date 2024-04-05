@@ -19,15 +19,16 @@ const usingThen = (cb) => {
     sleep(200);
 
     const promise1 = new Promise((resolve, reject) => {
-        resolve('Success!');
-        //reject('Reject');
+        //resolve('Success!');
+        reject('Reject');
       });
       
       promise1.then((resolve) => {
         mycallback(cb);
         // Expected output: "Success!"
+      }).catch((error) => {
+        console.error("Une erreur s'est produite :", error);
       });
-      
 }
 
 usingThen("Toto");

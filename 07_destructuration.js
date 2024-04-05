@@ -12,10 +12,14 @@
  *  - interdiction d'utiliser slice ou splice
  */
 
-const extractFirstTwo = (array) => { 
-    const [a, b, ...rest] = array;
-    return [a, b];
-}
+// Ma solution
+//const extractFirstTwo = (array) => { 
+//    const [a, b, ...rest] = array;
+//    return [a, b];
+//}
+
+// Solution de Gilian
+const extractFirstTwo = ([a, b]) => [a, b];
 
 const testArray1 = [1, 2, 3];
 console.log(extractFirstTwo(testArray1));
@@ -26,10 +30,14 @@ console.log(extractFirstTwo(testArray1));
  * exemple: [1, 2, 3] => [2, 3]
  */
 
-const extractRest = (array) => {
-    const [a, ...rest] = array;
-    return rest;
-}
+// Ma solution
+//const extractRest = (array) => {
+//    const [a, ...rest] = array;
+//    return rest;
+//}
+
+// Solution de Gilian
+const extractRest = ([a, ...rest]) => ([...rest])
 
 const testArray2 = [1, 2, 3];
 console.log(extractRest(testArray1));

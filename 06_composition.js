@@ -36,7 +36,7 @@ console.log(push(testarray3, 4));
  * ex: {a: 1, b: 2}, {c: 3, d: 4} => {a: 1, b: 2, c: 3, d: 4}
  */
 
-const merge = (obj1, obj2) => { return {...obj1, ...obj2} };
+const merge = (obj1, obj2) => ( {...obj1, ...obj2} );
 
 let testobj1 = {a: 1, b: 2};
 let testobj2 = {c: 3, d: 4};
@@ -51,7 +51,7 @@ console.log(merge(testobj1, testobj2));
  *  - interdiction d'utiliser l'opérateur d'affectation "="
  */
 
-const setName = (obj, name) => {return {...obj, name}}
+const setName = (obj, name) => ( {...obj, name} )
 
 let testobj3 = {name: 'toto'};
 let testname = 'titi';

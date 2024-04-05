@@ -18,7 +18,7 @@
 
 const getGroupName = (obj) => {
     const {name, ...grp} = obj;
-    return grp.group?.name ?? null;
+    return grp.group?.name;
 }
 
 const testobj = {

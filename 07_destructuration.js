@@ -74,8 +74,8 @@ console.log(extractName(testobj));
  */
 
 const removePassword = (obj) => {
-    const {name, ...rest} = obj;
-    return name;
+    const {password, ...rest} = obj;
+    return rest;
 };
 
 const testobj2 = {name: "toto", password: "1234"}

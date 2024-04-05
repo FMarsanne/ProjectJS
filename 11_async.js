@@ -18,12 +18,12 @@ const usingThen = (cb) => {
 
     sleep(200);
 
-    const promise1 = new Promise((resolve, reject) => {
+    const mypromise = new Promise((resolve, reject) => {
         //resolve('Success!');
         reject('Reject');
       });
       
-      promise1.then((resolve) => {
+      mypromise.then((resolve) => {
         mycallback(cb);
         // Expected output: "Success!"
       }).catch((error) => {
